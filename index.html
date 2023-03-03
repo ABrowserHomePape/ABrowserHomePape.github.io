@@ -1,11 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="main">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
-        <title>A Browser Home Page</title>
+        <title>Screensaver</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+        <style>
+            @import url(style.css);
+            @import url(text.css);
+            @import url(panel.css);
+        </style>
+
+        <script src="script.js"></script>
+        <script src="clock.js"></script>
+        <script src="panel.js"></script>
+        <script src="keyboard.js"></script>
     </head>
     <body>
-        WIP
+        <div class="settings hidden" id="settings_panel">
+            <div class="surface title">
+                <button class="icon" onclick="weatherDisplay()">
+                    <span class="material-symbols-rounded" style="color: white;">
+                        sync
+                    </span>
+                </button>
+                <button class="icon" onclick="panelSettingsClose()">
+                    <span class="material-symbols-rounded" style="color: white;">
+                        close
+                    </span>
+                </button>
+            </div>
+            <div class="panel weather">
+                <h2 class="temperature" id="temp_display">NUL °C</h2>
+            </div>
+        </div>
+        <div class="search_outer_container hidden" id="outer_search_container">
+            <div class="search_container" id="search_container">
+                <input type="text" title="search" id="search_box" class="search_box">
+                <button onclick="startSearch()" class="search_side_button">
+                    <span class="material-symbols-rounded" style="color: white;">
+                        search
+                    </span>
+                </button>
+                <button onclick="panelSearchClose()" class="search_side_button">
+                    <span class="material-symbols-rounded" style="color: white;">
+                        close
+                    </span>
+                </button>
+            </div>
+        </div>
+        
+        <h1 class="time" id="time_display">00:00:01</h1>
     </body>
 </html>

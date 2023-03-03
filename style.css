@@ -1,0 +1,149 @@
+:root {
+    --surface-background: rgba(15, 15, 15, 1);
+    --surface-panel: rgba(rgba(255, 255, 255, 0.1));
+}
+
+html, body {
+    background-size: cover;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+button {
+    background-color: rgba(255,255,255,1);
+    border: none;
+    outline: none;
+}
+
+div.settings.hidden {
+    position: absolute;
+    right: -380px;
+    top: 0px;
+    bottom: 0px;
+    width: 380px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    overflow: hidden;
+
+    background-color: rgba(0,0,0,0.8);
+    -webkit-backdrop-filter: blur(180px);
+    backdrop-filter: blur(180px);
+    
+    transition-duration: 333ms;
+    transition-timing-function: cubic-bezier(0, 0, 0, 1);
+}
+
+div.settings {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 380px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    overflow: hidden;
+
+    background-color: rgba(0,0,0,0.8);
+    -webkit-backdrop-filter: blur(180px);
+    backdrop-filter: blur(180px);
+
+    transition-duration: 333ms;
+    transition-timing-function: cubic-bezier(0, 0, 0, 1);
+}
+
+div.surface.title {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0px;
+}
+
+button.icon {
+    outline: none;
+    border: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 8px;
+
+    height: 40px;
+    width: 40px;
+    margin: 4px;
+
+    transition-duration: 150ms;
+    transition-timing-function: cubic-bezier(0,0,0,1);
+}
+
+button.icon:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+span.icon {
+    border-radius: 4px;
+    
+    color: white;
+}
+
+div.vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+}
+
+div.horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+}
+
+div.panel {
+    background-color: rgba(255,255,255,0.1);
+    
+    position: relative;
+    width: 320px;
+    padding: 20px;
+    min-height: 10px;
+    border-radius: 16px;
+
+    margin: 10px;
+    color: white;
+}
+
+h3.max_min {
+    color:rgba(255, 255, 255, 0.75);
+
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 100%;
+}
