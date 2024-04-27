@@ -1,4 +1,4 @@
-const q = document.getElementById("search_box")
+var q = document.getElementById("search_box")
 
 function panelSettingsClose() {
     let settings = document.getElementById("settings_panel");
