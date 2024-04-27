@@ -12,7 +12,7 @@ function panelSearchClose() {
 
 function startSearch() {
     if (q.value.startsWith("->") === true) {
-        window.location.replace(q.replace("->", ""));
+        window.location.replace(q.value.replace("->", ""));
     } else {
         window.open('http://google.com/search?q='+q);
     };
