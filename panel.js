@@ -11,7 +11,6 @@ function panelSearchClose() {
 }
 
 function startSearch() {
-    var q = document.getElementById("search_box").value
     if (q.value.startsWith("->") === true) {
         window.location.replace(q.replace("->", ""));
     } else {
