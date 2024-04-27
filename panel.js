@@ -10,7 +10,7 @@ function panelSearchClose() {
 
 function startSearch() {
     var q = document.getElementById("search_box").value
-    if (q.startsWith("->") {
+    if (q.startsWith("->")) {
         window.location.replace(q.replace("->", "");
     } else {
         window.open('http://google.com/search?q='+q);
